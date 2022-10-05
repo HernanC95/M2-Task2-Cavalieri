@@ -30,7 +30,7 @@ function filtrarUpcoming(eventos) {
               <div
                 class="d-flex w-100 justify-content-between align-items-center"
               >
-                <p class="m-0">Precio: ${eventos[i].price}</p>
+                <p class="m-0">Price: ${eventos[i].price}</p>
                 <a href="#" class="btn btn-secondary">Details</a>
               </div>
             </div>
