@@ -1,0 +1,48 @@
+.colorHeader{
+    background-color: #2e2e2e;
+}
+.colorCarrusel-Footer{
+    background-color: #656565;
+}
+.colorButton{
+    background-color: #7d7d7d;
+}
+.colorSubmain{
+    background-color: #AC0554;
+}
+.logo{
+    min-width: 10%;
+    object-fit: contain;
+}
+.barraBusqueda{
+    min-width: 20%;
+}
+.img-details{
+    min-width: 50%;
+    min-height: 50%;
+    object-fit:cover;
+}
+main{
+    min-height: 75vh;
+}
+footer{
+    height: 10vh;
+}
+table td:nth-child(1){
+    width: 40%;
+}
+table td:nth-child(2){
+    width: 40%;
+}
+tr,td{
+    table-layout: fixed;
+    text-align: center;
+    border: #2e2e2e solid 0.5px;
+}
+th{
+    text-align: justify;
+}
+.details{
+    min-width: 50% ;
+   min-height: 50vh;
+}
