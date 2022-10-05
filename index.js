@@ -1,182 +1,8 @@
-const datos = {"currentDate" : "2022-01-01",
-"events" : [
-  {
-    _id: 1,
-    "image":"https://amazingeventsapi.herokuapp.com/api/img/Feriadecomidas7.jpg",
-    "name":"Collectivities Party",
-    "date":"2021-12-12",
-    "description":"Enjoy your favourite dishes, from different countries, in a unique event for the whole family.",
-    "category":"Food Fair",
-    "place":"Room A",
-    "capacity":45000,
-    "assistance":42756,
-    "price":5
-  },
-  {
-    _id: 2,
-    "image":"https://amazingeventsapi.herokuapp.com/api/img/Feriadecomidas2.jpg",
-    "name":"Korean style",
-    "date":"2022-08-12",
-    "description":"Enjoy the best Korean dishes, with international chefs and awesome events.",
-    "category":"Food Fair",
-    "place":"Room A",
-    "capacity":45000,
-    "assistance":42756,
-    "price":10
-  },
-  {
-    _id: 3,
-    "image":"https://amazingeventsapi.herokuapp.com/api/img/Salidaalmuseo5.jpg",
-    "name":"Jurassic Park",
-    "date":"2021-11-02",
-    "description":"Let's go meet the biggest dinosaurs in the paleontology museum.",
-    "category":"Museum",
-    "place":"Field",
-    "capacity":82000,
-    "assistance":65892,
-    "price":15
-  },
-  {
-    _id: 4,
-    "image":"https://amazingeventsapi.herokuapp.com/api/img/Salidaalmuseo1.jpg",
-    "name":"Parisian Museum",
-    "date":"2022-11-02",
-    "description":"A unique tour in the city of lights, get to know one of the most iconic places.",
-    "category":"Museum",
-    "place":"Paris",
-    "capacity":8200,
-    "estimate":8200,
-    "price":3500
-  },
-  {
-    _id: 5,
-    "image":"https://amazingeventsapi.herokuapp.com/api/img/Fiestadedisfraces2.jpg",
-    "name":"Comicon",
-    "date":"2021-02-12",
-    "description":"For comic lovers, all your favourite characters gathered in one place.",
-    "category":"Costume Party",
-    "place":"Room C",
-    "capacity":120000,
-    "assistance":110000,
-    "price":54
-  },
-  {
-    _id: 6,
-    "image":"https://amazingeventsapi.herokuapp.com/api/img/Fiestadedisfraces1.jpg",
-    "name":"Halloween Night",
-    "date":"2022-02-12",
-    "description":"Come with your scariest costume and win incredible prizes.",
-    "category":"Costume Party",
-    "place":"Room C",
-    "capacity":12000,
-    "estimate":9000,
-    "price":12
-  },
-  {
-    _id: 7,
-    "image":"https://amazingeventsapi.herokuapp.com/api/img/Conciertodemusica1.jpg",
-    "name":"Metallica in concert",
-    "date":"2022-01-22",
-    "description":"The only concert of the most emblematic band in the world.",
-    "category":"Music Concert",
-    "place":"Room A"
-    ,"capacity":138000,
-    "estimate":138000,
-    "price":150
-  },
-  {
-    _id: 8,
-    "image":"https://amazingeventsapi.herokuapp.com/api/img/Conciertodemusica2.jpg",
-    "name":"Electronic Fest",
-    "date":"2021-01-22",
-    "description":"The best national and international DJs gathered in one place.",
-    "category":"Music Concert",
-    "place":"Room A",
-    "capacity":138000,
-    "assistance":110300,
-    "price":250
-    },
-  {
-    _id: 9,
-    "image":"https://amazingeventsapi.herokuapp.com/api/img/Maraton3.jpg",
-    "name":"10K for life",
-    "date":"2021-03-01",
-    "description":"Come and exercise, improve your health and lifestyle.",
-    "category":"Race",
-    "place":"Soccer field",
-    "capacity":30000,
-    "assistance":25698,
-    "price":3
-  },
-  {
-    _id: 10,
-    "image":"https://amazingeventsapi.herokuapp.com/api/img/Maraton1.jpg",
-    "name":"15K NY",
-    "date":"2022-03-01",
-    "description":"We'll be raising funds for hospitals and medical care in this unique event held in The Big Apple.",
-    "category":"Race",
-    "place":"New York",
-    "capacity":3000000,
-    "assistance":2569800,
-    "price":3
-    },
-  {
-    _id: 11,
-    "image":"https://amazingeventsapi.herokuapp.com/api/img/Libros7.jpg",
-    "name":"School's book fair",
-    "date":"2022-10-15",
-    "description":"Bring your unused school book and take the one you need.",
-    "category":"Book Exchange",
-    "place":"Room D1",
-    "capacity":150000,
-    "estimate":123286,
-    "price":1
-  },
-  {
-    _id: 12,
-    "image":"https://amazingeventsapi.herokuapp.com/api/img/Libros3.jpg",
-    "name":"Just for your kitchen",
-    "date":"2021-11-09",
-    "description":"If you're a gastronomy lover come get the cookbook that best suits your taste and your family's.",
-    "category":"Book Exchange",
-    "place":"Room D6",
-    "capacity":130000,
-    "assistance":90000,
-    "price":100
-  },
-  {
-    _id: 13,
-    "image":"https://amazingeventsapi.herokuapp.com/api/img/Cine3.jpg",
-    "name":"Batman",
-    "date":"2021-3-11",
-    "description":"Come see Batman fight crime in Gotham City.",
-    "category":"Cinema",
-    "place":"Room D1",
-    "capacity":11000,
-    "assistance":9300,
-    "price":225
-  },
-  {
-    _id: 14,
-    "image":"https://amazingeventsapi.herokuapp.com/api/img/Cine7.jpg",
-    "name":"Avengers",
-    "date":"2022-10-15",
-    "description":"Marvel's Avengers Premier in 3d, the start of an epic saga with your favourite superheroes.",
-    "category":"Cinema",
-    "place":"Room D1",
-    "capacity":9000,
-    "estimate":9000,
-    "price":250
-  }
-]
-}
 
-let fechaActual = datos.currentDate
-const eventos = datos.events
+let fechaActual = data.currentDate
+let eventos = data.events
+console.log(eventos);
 
-/////////SE FILTRA POR CATEGORIA
-
-//FOOD FAIR
 function validarCategoriaFF(category){
     let resultado=false
     if (category == 'Food Fair'){
@@ -186,16 +12,37 @@ function validarCategoriaFF(category){
 }
 
 function filtrarCategoriaFF(eventos) {
-  const foodFairAux = [];
+  let container = document.getElementById('container')
   for (let i = 0; i < eventos.length; i++) {
     if (validarCategoriaFF(eventos[i].category)){
-        foodFairAux.push(eventos[i]) }
+      let article = document.createElement('article')
+        article.innerHTML +=
+      `    <div class="card h-100" style="width: 18rem">
+            <img
+              src="${eventos[i].image}"
+              class="card-img-top p-2 h-75 rounded-4"
+              alt="${eventos[i].name}"
+            />
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-between"
+            >
+              <h5 class="card-title">${eventos[i].name}</h5>
+              <p class="card-text text-center">${eventos[i].description}</p>
+              <div
+                class="d-flex w-100 justify-content-between align-items-center"
+              >
+                <p class="m-0">Precio: ${eventos[i].price}</p>
+                <a href="#" class="btn btn-secondary">Details</a>
+              </div>
+            </div>
+          </div>`
+        container.appendChild(article)
+      }
   }
-  return foodFairAux;
 }
-console.log(filtrarCategoriaFF(eventos))
+filtrarCategoriaFF(eventos)
 
-//MUSEUM
+
 function validarCategoriaM(category){
     let resultado=false
     if (category == 'Museum'){
@@ -205,16 +52,37 @@ function validarCategoriaM(category){
 }
 
 function filtrarCategoriaM(eventos) {
-  const museumAux = [];
+  let container = document.getElementById('container')
   for (let i = 0; i < eventos.length; i++) {
     if (validarCategoriaM(eventos[i].category)){
-        museumAux.push(eventos[i]) }
+      let article = document.createElement('article')
+        article.innerHTML +=
+      `    <div class="card h-100" style="width: 18rem">
+            <img
+              src="${eventos[i].image}"
+              class="card-img-top p-2 h-75 rounded-4"
+              alt="${eventos[i].name}"
+            />
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-between"
+            >
+              <h5 class="card-title">${eventos[i].name}</h5>
+              <p class="card-text text-center">${eventos[i].description}</p>
+              <div
+                class="d-flex w-100 justify-content-between align-items-center"
+              >
+                <p class="m-0">Precio: ${eventos[i].price}</p>
+                <a href="#" class="btn btn-secondary">Details</a>
+              </div>
+            </div>
+          </div>`
+        container.appendChild(article)
+      }
   }
-  return museumAux;
 }
-console.log(filtrarCategoriaM(eventos))
+filtrarCategoriaM(eventos)
 
-//COSTUME PARTY
+
 function validarCategoriaCP(category){
     let resultado=false
     if (category == 'Costume Party'){
@@ -223,17 +91,39 @@ function validarCategoriaCP(category){
     return resultado
 }
 
-function filtrarCategoriaCP(eventos) {
-  const costumePartyAux = [];
+function filtrarCategoriaCP(eventos) 
+{
+  let container = document.getElementById('container')
   for (let i = 0; i < eventos.length; i++) {
     if (validarCategoriaCP(eventos[i].category)){
-        costumePartyAux.push(eventos[i]) }
+      let article = document.createElement('article')
+        article.innerHTML +=
+      `    <div class="card h-100" style="width: 18rem">
+            <img
+              src="${eventos[i].image}"
+              class="card-img-top p-2 h-75 rounded-4"
+              alt="${eventos[i].name}"
+            />
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-between"
+            >
+              <h5 class="card-title">${eventos[i].name}</h5>
+              <p class="card-text text-center">${eventos[i].description}</p>
+              <div
+                class="d-flex w-100 justify-content-between align-items-center"
+              >
+                <p class="m-0">Precio: ${eventos[i].price}</p>
+                <a href="#" class="btn btn-secondary">Details</a>
+              </div>
+            </div>
+          </div>`
+        container.appendChild(article)
+      }
   }
-  return costumePartyAux;
 }
-console.log(filtrarCategoriaCP(eventos))
+filtrarCategoriaCP(eventos)
 
-//MUSIC CONCERT
+
 function validarCategoriaMC(category){
     let resultado=false
     if (category == 'Music Concert'){
@@ -243,16 +133,37 @@ function validarCategoriaMC(category){
 }
 
 function filtrarCategoriaMC(eventos) {
-  const musicConcertAux = [];
+  let container = document.getElementById('container')
   for (let i = 0; i < eventos.length; i++) {
     if (validarCategoriaMC(eventos[i].category)){
-        musicConcertAux.push(eventos[i]) }
+      let article = document.createElement('article')
+        article.innerHTML +=
+      `    <div class="card h-100" style="width: 18rem">
+            <img
+              src="${eventos[i].image}"
+              class="card-img-top p-2 h-75 rounded-4"
+              alt="${eventos[i].name}"
+            />
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-between"
+            >
+              <h5 class="card-title">${eventos[i].name}</h5>
+              <p class="card-text text-center">${eventos[i].description}</p>
+              <div
+                class="d-flex w-100 justify-content-between align-items-center"
+              >
+                <p class="m-0">Precio: ${eventos[i].price}</p>
+                <a href="#" class="btn btn-secondary">Details</a>
+              </div>
+            </div>
+          </div>`
+        container.appendChild(article)
+      }
   }
-  return musicConcertAux;
 }
-console.log(filtrarCategoriaMC(eventos))
+filtrarCategoriaMC(eventos)
 
-//RACE
+
 function validarCategoriaR(category){
     let resultado=false
     if (category == 'Race'){
@@ -262,16 +173,37 @@ function validarCategoriaR(category){
 }
 
 function filtrarCategoriaR(eventos) {
-  const raceAux = [];
+  let container = document.getElementById('container')
   for (let i = 0; i < eventos.length; i++) {
     if (validarCategoriaR(eventos[i].category)){
-        raceAux.push(eventos[i]) }
+      let article = document.createElement('article')
+        article.innerHTML +=
+      `    <div class="card h-100" style="width: 18rem">
+            <img
+              src="${eventos[i].image}"
+              class="card-img-top p-2 h-75 rounded-4"
+              alt="${eventos[i].name}"
+            />
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-between"
+            >
+              <h5 class="card-title">${eventos[i].name}</h5>
+              <p class="card-text text-center">${eventos[i].description}</p>
+              <div
+                class="d-flex w-100 justify-content-between align-items-center"
+              >
+                <p class="m-0">Precio: ${eventos[i].price}</p>
+                <a href="#" class="btn btn-secondary">Details</a>
+              </div>
+            </div>
+          </div>`
+        container.appendChild(article)
+      }
   }
-  return raceAux;
 }
-console.log(filtrarCategoriaR(eventos))
+filtrarCategoriaR(eventos)
 
-//BOOK EXCHANGES
+
 function validarCategoriaBE(category){
     let resultado=false
     if (category == 'Book Exchange'){
@@ -281,16 +213,39 @@ function validarCategoriaBE(category){
 }
 
 function filtrarCategoriaBE(eventos) {
-  const bookExchangeAux = [];
-  for (let i = 0; i < eventos.length; i++) {
-    if (validarCategoriaBE(eventos[i].category)){
-        bookExchangeAux.push(eventos[i]) }
+  {
+    let container = document.getElementById('container')
+    for (let i = 0; i < eventos.length; i++) {
+      if (validarCategoriaBE(eventos[i].category)){
+        let article = document.createElement('article')
+          article.innerHTML +=
+        `    <div class="card h-100" style="width: 18rem">
+              <img
+                src="${eventos[i].image}"
+                class="card-img-top p-2 h-75 rounded-4"
+                alt="${eventos[i].name}"
+              />
+              <div
+                class="card-body d-flex flex-column align-items-center justify-content-between"
+              >
+                <h5 class="card-title">${eventos[i].name}</h5>
+                <p class="card-text text-center">${eventos[i].description}</p>
+                <div
+                  class="d-flex w-100 justify-content-between align-items-center"
+                >
+                  <p class="m-0">Precio: ${eventos[i].price}</p>
+                  <a href="#" class="btn btn-secondary">Details</a>
+                </div>
+              </div>
+            </div>`
+          container.appendChild(article)
+        }
+    }
   }
-  return bookExchangeAux;
 }
-console.log(filtrarCategoriaBE(eventos))
+filtrarCategoriaBE(eventos)
 
-//CINEMA
+
 function validarCategoriaC(category){
     let resultado=false
     if (category == 'Cinema'){
@@ -300,11 +255,32 @@ function validarCategoriaC(category){
 }
 
 function filtrarCategoriaC(eventos) {
-  const cinemaAux = [];
+  let container = document.getElementById('container')
   for (let i = 0; i < eventos.length; i++) {
     if (validarCategoriaC(eventos[i].category)){
-        cinemaAux.push(eventos[i]) }
+      let article = document.createElement('article')
+        article.innerHTML +=
+      `    <div class="card h-100" style="width: 18rem">
+            <img
+              src="${eventos[i].image}"
+              class="card-img-top p-2 h-75 rounded-4"
+              alt="${eventos[i].name}"
+            />
+            <div
+              class="card-body d-flex flex-column align-items-center justify-content-between"
+            >
+              <h5 class="card-title">${eventos[i].name}</h5>
+              <p class="card-text text-center">${eventos[i].description}</p>
+              <div
+                class="d-flex w-100 justify-content-between align-items-center"
+              >
+                <p class="m-0">Precio: ${eventos[i].price}</p>
+                <a href="#" class="btn btn-secondary">Details</a>
+              </div>
+            </div>
+          </div>`
+        container.appendChild(article)
+      }
   }
-  return cinemaAux;
 }
-console.log(filtrarCategoriaC(eventos))
+filtrarCategoriaC(eventos)
