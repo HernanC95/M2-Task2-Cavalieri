@@ -18,7 +18,7 @@ function filtrarPastEvents(eventos) {
       `    <div class="card h-100" style="width: 18rem">
             <img
               src="${eventos[i].image}"
-              class="card-img-top p-2 h-75 rounded-4"
+              class="card-img-top p-2 h-50 rounded-4"
               alt="${eventos[i].name}"
             />
             <div
