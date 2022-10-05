@@ -20,7 +20,7 @@ function filtrarCategoriaFF(eventos) {
       `    <div class="card h-100" style="width: 18rem">
             <img
               src="${eventos[i].image}"
-              class="card-img-top p-2 h-75 rounded-4"
+              class="card-img-top p-2 img-fluid h-50 rounded-4"
               alt="${eventos[i].name}"
             />
             <div
@@ -60,7 +60,7 @@ function filtrarCategoriaM(eventos) {
       `    <div class="card h-100" style="width: 18rem">
             <img
               src="${eventos[i].image}"
-              class="card-img-top p-2 h-75 rounded-4"
+              class="card-img-top p-2 h-50 rounded-4"
               alt="${eventos[i].name}"
             />
             <div
@@ -101,7 +101,7 @@ function filtrarCategoriaCP(eventos)
       `    <div class="card h-100" style="width: 18rem">
             <img
               src="${eventos[i].image}"
-              class="card-img-top p-2 h-75 rounded-4"
+              class="card-img-top p-2 h-50 rounded-4"
               alt="${eventos[i].name}"
             />
             <div
@@ -141,7 +141,7 @@ function filtrarCategoriaMC(eventos) {
       `    <div class="card h-100" style="width: 18rem">
             <img
               src="${eventos[i].image}"
-              class="card-img-top p-2 h-75 rounded-4"
+              class="card-img-top p-2 h-50 rounded-4"
               alt="${eventos[i].name}"
             />
             <div
@@ -181,7 +181,7 @@ function filtrarCategoriaR(eventos) {
       `    <div class="card h-100" style="width: 18rem">
             <img
               src="${eventos[i].image}"
-              class="card-img-top p-2 h-75 rounded-4"
+              class="card-img-top p-2 h-50 rounded-4"
               alt="${eventos[i].name}"
             />
             <div
@@ -222,7 +222,7 @@ function filtrarCategoriaBE(eventos) {
         `    <div class="card h-100" style="width: 18rem">
               <img
                 src="${eventos[i].image}"
-                class="card-img-top p-2 h-75 rounded-4"
+                class="card-img-top p-2 h-50 rounded-4"
                 alt="${eventos[i].name}"
               />
               <div
@@ -263,7 +263,7 @@ function filtrarCategoriaC(eventos) {
       `    <div class="card h-100" style="width: 18rem">
             <img
               src="${eventos[i].image}"
-              class="card-img-top p-2 h-75 rounded-4"
+              class="card-img-top p-2 h-50 rounded-4"
               alt="${eventos[i].name}"
             />
             <div
