@@ -17,11 +17,7 @@
 .barraBusqueda{
     min-width: 20%;
 }
-.img-details{
-    min-width: 50%;
-    min-height: 50%;
-    object-fit:cover;
-}
+ 
 .card{
     border-radius: 1rem;
     border: #656565 solid 2px;
@@ -51,8 +47,4 @@ tr,td{
 }
 th{
     text-align: justify;
-}
-.details{
-    min-width: 50% ;
-   min-height: 50vh;
 }
