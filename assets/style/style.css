@@ -41,10 +41,12 @@ table td:nth-child(2){
     width: 40%;
 }
 tr,td{
+    padding: 12px;
     table-layout: fixed;
     text-align: center;
     border: #2e2e2e solid 0.5px;
 }
 th{
+    padding: 12px;
     text-align: justify;
 }
